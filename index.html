@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% capture 01-heading %}{% include index/01-heading.md %}{% endcapture %}
+{% capture 02-all-about-fish %}{% include index/02-all-about-fish.md %}{% endcapture %}
+{% capture 03-all-about-chips %}{% include index/03-all-about-chips.md %}{% endcapture %}
+
+<h1 class="page-heading">{{ 01-heading }}</h1>
+
+<section id="all-about-fish">{{ 02-all-about-fish | markdownify }}</section>
+
+<section id="all-about-chips">{{ 03-all-about-chips | markdownify }}</section>
+
